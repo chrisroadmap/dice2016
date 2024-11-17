@@ -3,7 +3,7 @@ python implementation of DICE2016 using pyomo and ipopt
 
 ## installation
 1. clone from GitHub
-2. install required dependencies (requires `conda`, see [Installing Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html))
+2. install required dependencies (requires `conda`, see [Installing Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)) with `conda env create -f environment.yml`
 
 ## run
 1. activate environment with `conda activate dice2016`
