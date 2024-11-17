@@ -7,7 +7,7 @@ python implementation of DICE2016 using pyomo and ipopt
 
 ## run
 1. activate environment with `conda activate dice2016`
-2. to edit parameters that control the model behaviour, edit the `dice_parameters.csv` file (note that some combinations of parameters may cause infeasibilities or weird results)
+2. to edit parameters that control the model behaviour, edit the `dice2016_parameters.csv` file (note that some combinations of parameters may cause infeasibilities or weird results)
 3. then `python dice2016.py`.
 
 ## notes
