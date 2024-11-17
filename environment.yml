@@ -1,0 +1,8 @@
+name: dice2016
+channels:
+  - conda-forge
+dependencies:
+  - pyomo
+  - pandas
+  - numpy
+  - ipopt==3.11.1  # https://stackoverflow.com/questions/64912995/applicationerror-no-executable-found-for-solver-ipopt-in-pyomo
