@@ -52,4 +52,4 @@ scale1,0.030245527,Multiplicative scaling coefficient
 scale2,-10993.704,Additive scaling coefficient
 fosslim,6000,Maximum cumulative extraction fossil fuels (GtC)
 dmiulim,0.2,Limit on change in miu
-logfile,0,Dump solver log?
+logfile,1,Dump solver log?

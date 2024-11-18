@@ -5,4 +5,4 @@ dependencies:
   - pyomo
   - pandas
   - numpy
-  - ipopt==3.11.1  # https://stackoverflow.com/questions/64912995/applicationerror-no-executable-found-for-solver-ipopt-in-pyomo
+  - ipopt==3.14.5  # https://stackoverflow.com/questions/64912995/applicationerror-no-executable-found-for-solver-ipopt-in-pyomo
