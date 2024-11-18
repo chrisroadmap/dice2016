@@ -206,7 +206,7 @@ def dice2016(**kwargs):
             return (kwargs['optlrsav'], kwargs['optlrsav'])
 
     # Variables and their scopes
-    model.MIU = pe.Var(model.time_periods, domain=pe.NonNegativeReals, bounds=miu_bounds) 
+    model.MIU = pe.Var(model.time_periods, domain=pe.NonNegativeReals, bounds=miu_bounds, initialize=kwargs['miu0']) 
     model.FORC = pe.Var(model.time_periods, domain=pe.Reals)
     # difference here: I define TATM over Reals, because TATM < 0 is possible
     model.TATM = pe.Var(model.time_periods, domain=pe.Reals, bounds=tatm_bounds)
@@ -217,7 +217,7 @@ def dice2016(**kwargs):
     model.E = pe.Var(model.time_periods, domain=pe.Reals) 
     model.EIND = pe.Var(model.time_periods, domain=pe.Reals) 
     model.C = pe.Var(model.time_periods, domain=pe.NonNegativeReals, bounds=c_bounds) 
-    model.K = pe.Var(model.time_periods, domain=pe.NonNegativeReals, bounds=k_bounds) 
+    model.K = pe.Var(model.time_periods, domain=pe.NonNegativeReals, bounds=k_bounds, initialize=kwargs['k0']) 
     model.CPC = pe.Var(model.time_periods, domain=pe.NonNegativeReals, bounds=cpc_bounds) 
     model.I = pe.Var(model.time_periods, domain=pe.NonNegativeReals) 
     model.S = pe.Var(model.time_periods, domain=pe.Reals, bounds=s_bounds) 
